@@ -1,0 +1,42 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Регистр</th>
+      <th>Овог</th>
+      <th>Нэр</th>
+      <th>Он</th>
+      <th>1 сар</th>
+      <th>2 сар</th>
+      <th>3 сар</th>
+      <th>4 сар</th>
+      <th>5 сар</th>
+      <th>6 сар</th>
+      <th>7 сар</th>
+      <th>8 сар</th>
+      <th>9 сар</th>
+      <th>10 сар</th>
+      <th>11 сар</th>
+      <th>12 сар</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let row of matrix'>
+      <td>{{row.RegID}}</td>
+      <td>{{row.FatName}}</td>
+      <td>{{row.BenName}}</td>
+      <td>{{row.CalYear}}</td>
+      <td (dblclick)='select(row, 1)'>{{row.Salary1}}</td>
+      <td>{{row.Salary2}}</td>
+      <td>{{row.Salary3}}</td>
+      <td>{{row.Salary4}}</td>
+      <td>{{row.Salary5}}</td>
+      <td>{{row.Salary6}}</td>
+      <td>{{row.Salary7}}</td>
+      <td>{{row.Salary8}}</td>
+      <td>{{row.Salary9}}</td>
+      <td>{{row.Salary10}}</td>
+      <td>{{row.Salary11}}</td>
+      <td>{{row.Salary12}}</td>
+    </tr>
+  </tbody>
+</table>
